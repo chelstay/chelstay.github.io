@@ -1,0 +1,131 @@
+body {
+  font-family: 'Roboto Condensed', san-serif;
+  background-color: #f4f7f7;
+  height: 100vh;
+  text-align: left;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 3rem;
+}
+
+
+
+/* Navigation Bar */
+
+.navbar {
+  background-color: #f4f7f7;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar-toggler-icon {
+  color: #5da0a2;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-link {
+  color: #5da0a2;
+}
+
+.nav-link:hover {
+  color: #34495e;
+}
+
+.home-icon:hover {
+  color: #34495e;
+}
+
+
+
+/* Headings */
+
+h1 {
+  font-size: 80px;
+  font-weight: 800px;
+}
+
+h2, h3, h5, h6, p {
+  color: #34495e;
+}
+
+h1, h4, a {
+  color: #5da0a2;
+}
+
+h4 {
+  font-size: 40px;
+  letter-spacing: 6px;
+}
+
+
+h5 {
+  font-size: 26px;
+  font-weight: normal;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+
+p {
+    font-size: 22px;
+  }
+
+a:hover {
+  color: #5da0a2;
+  text-decoration: underline;
+}
+
+/* Styling for all buttons */
+
+.btn {
+  width: 40%;
+  border-color: #34495e;
+  color: #34495e;
+}
+
+.btn:hover {
+  background-color: #34495e;
+  color: #f4f7f7;
+}
+
+/* light color for lesser-known technologies */
+.muted-text {
+  color: #75898a;
+}
+
+
+/* ABOUT SECTION */
+
+#about p , #education p {
+  font-size: 1.2rem;
+}
+
+/* SKILLS */
+#skills h4 {
+  padding-bottom: 1.5rem;
+}
+
+.card {
+  background-color: #f4f7f7;
+  padding: auto auto;
+
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
