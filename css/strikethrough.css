@@ -1,6 +1,6 @@
 /* Strike-Through Effect (lg only, navbar) */
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 
   .strike:before, .strike:after {
     content: '';
