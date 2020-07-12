@@ -15,6 +15,15 @@ section {
   margin: 10% auto;
 }
 
+@media (min-width: 992px) {
+  .container {
+    padding-left: 5%;
+  }
+  #title {
+    padding-left: 10%;
+  }
+}
+
 /* Icon Bar (shown on lg and xl screens only)*/
 .icon-bar {
   position: fixed;
@@ -40,41 +49,52 @@ section {
 
 
 /* Navigation Bar */
-.navbar {
-  width: 100%;
-  position: fixed;
-  background-color: #f4f7f7;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
-  padding: 3.5rem;
-}
 
-.navbar-brand , .navbar-toggler, .nav-link {
-  font-size: 2.8rem;
-}
+/* Navigation xs-md only */
 
-.navbar-brand, .navbar-brand:hover, .navbar-toggler, .nav-link {
-  color: #5da0a2;
-}
+  .navbar {
+    width: 100%;
+    position: fixed;
+    background-color: #f4f7f7;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+    padding: 3.5rem;
+    margin-bottom: 15%;
+  }
 
-.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
-}
+  .navbar-brand , .navbar-toggler, .nav-link {
+    font-size: 2.8rem;
+  }
 
-.nav-link {
-  text-align: center;
-  margin: auto 1rem;
-}
+  .navbar-brand, .navbar-brand:hover, .navbar-toggler, .nav-link {
+    color: #5da0a2;
+  }
 
-.nav-link:hover {
-  color: #34495e;
-}
+  .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+  }
 
-/* Navbar (sm only) */
-
-/* Navbar (md) */
 
 /* Navbar Expand (lg/xl) */
+@media (min-width: 992px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .nav-link {
+    text-align: center;
+    margin: auto 1rem;
+    font-size: 1.5rem;
+  }
+
+  .nav-link:hover {
+    color: #34495e;
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+}
+
 
 /* Headings */
 
@@ -108,11 +128,50 @@ h5 {
 /* (headings: md) */
 
 /* (headings: lg / xl)  */
+@media (min-width: 992px) {
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 800px;
+  }
+
+  h1 , h2 {
+    color: #5da0a2;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    text-align: left;
+    width: 70%;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    color: #778899
+  }
+}
+
+
+
 
 /* Paragraph  */
 p {
   font-size: 2.3rem;
   text-align: justify;
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 1.5rem;
+  }
 }
 
 /* p (md only) */
@@ -145,6 +204,13 @@ a:hover {
 .smaller-btn {
   font-size: 2.5rem;
   width: 50%;
+}
+
+@media (min-width: 992px) {
+  .btn {
+    font-size: 1.8rem;
+    width: 30%;
+  }
 }
 
 /* Title */
