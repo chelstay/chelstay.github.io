@@ -69,3 +69,17 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+
+
+
+
+document.getElementById("showHide").onclick = function() {
+    var theDiv = document.getElementById("coursework");
+    if(theDiv.style.display == 'none') {
+        theDiv.style.display = 'block';
+        this.innerHTML = 'Hide Coursework';
+    } else {
+        theDiv.style.display = 'none';
+        this.innerHTML = 'Show Coursework';
+    }
+}

@@ -15,91 +15,110 @@ section {
   margin: 10% auto;
 }
 
-#title {
-  margin-top: 13%;
+/* Icon Bar (shown on lg and xl screens only)*/
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: #34495e;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  color: #f4f7f7;
+  background-color: #34495e;
+}
+
 
 /* Navigation Bar */
 .navbar {
   width: 100%;
-  height: 20rem;
   position: fixed;
   background-color: #f4f7f7;
-  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+  padding: 3.5rem;
 }
 
-/* Medium devices (desktops, 768px and up) */
-@media (min-width: 768px) {
-.navbar {
-  height: 5rem;
-}
+.navbar-brand , .navbar-toggler, .nav-link {
+  font-size: 2.8rem;
 }
 
-.navbar-brand {
-  font-size: 2.7rem;
-  padding-left: 1.5rem;
+.navbar-brand, .navbar-brand:hover, .navbar-toggler, .nav-link {
   color: #5da0a2;
 }
 
-.navbar-collapse {
-  background-color: #f4f7f7;
-}
-
-.fa-bars , .close {
-  color: #5da0a2;
-  font-size: 2.3rem;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .nav-link {
-  color: #5da0a2;
-  font-size: 2.5rem;
   text-align: center;
+  margin: auto 1rem;
 }
 
 .nav-link:hover {
   color: #34495e;
 }
 
-.home-icon:hover {
-  color: #34495e;
-}
+/* Navbar (sm only) */
+
+/* Navbar (md) */
+
+/* Navbar Expand (lg/xl) */
 
 /* Headings */
+
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 800px;
-  color: #5da0a2;
-  margin-top: 1.5rem;
 }
 
-
+h1 , h2 {
+  color: #5da0a2;
+}
 
 h2 {
-  font-size: 5rem;
-  color: #5da0a2;
+  font-size: 4rem;
 }
 
 h3 {
-  font-size: 3.9rem;
-  margin-top: 1.5rem;
+  font-size: 3rem;
 }
 
 h4 {
-  font-size: 3.3rem;
-  margin-top: 1.5rem;
+  font-size: 2.8rem;
+  text-align: justify;
 }
 
+h5 {
+  font-size: 2.3rem;
+  color: #778899
+}
+
+/* (headings: md) */
+
+/* (headings: lg / xl)  */
+
+/* Paragraph  */
 p {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+  text-align: justify;
 }
 
+/* p (md only) */
+
+
+/* Links */
 a {
   color: #5da0a2;
 }
@@ -109,34 +128,7 @@ a:hover {
   text-decoration: underline;
 }
 
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .container {
-    width: 70%;
-  }
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 4rem;
-  }
-  h3 {
-    font-size: 3rem;
-  }
-  h4 {
-    font-size: 2.8
-  }
-  p {
-    font-size: 2rem;
-  }
-
-  .btn {
-    font-size: 2rem;
-  }
-}
-
-/* Styling for all buttons */
+/* Buttons */
 .btn {
   margin-top: 1.5rem;
   font-size: 3.3rem;
@@ -155,237 +147,41 @@ a:hover {
   width: 50%;
 }
 
-/* ABOUT SECTION */
-/* SKILLS */
-.card {
-  background-color: #f4f7f7;
-  padding: 3rem auto;
-  margin: 2.5rem auto;
-  text-align: center;
-}
+/* Title */
 
-img {
-  width: 150px;
-  height: 150px;
-}
+/* Title (md only) */
 
-.work-link{
+/* Title (lg / xl) */
+
+
+
+/* Edu */
+
+/* Edu (md only) */
+
+/* Edu (lg / xl) */
+
+
+/* Technologies */
+
+/* Technologies (md only) */
+
+/* Technologies (lg / xl) */
+
+
+/* Work */
+.work-link {
   color: #5da0a2;
 }
 
-h5 {
-  font-size: 2rem;
-  padding-right: 1.5rem;
-  color: #808080;
-}
 
-#more {
-  display: none;
-  font-size: 2.4rem;
-}
+/* Work (md only) */
 
-.fadein {
-  opacity: 0;
-}
-
-.toshow1, .toshow2, .toshow3 {
-  display: none;
-}
-
-.title-box {
-  margin-top: 13%;
-}
+/* Work (lg / xl) */
 
 
+/* Contact*/
 
-/* MEDIUM ONLY */
+/* Contact (md only) */
 
-@media (min-width:768px) and (max-width: 992px) {
-  h4 {
-    font-size: 40px;
-  }
-}
-
-/* LARGE ONLY */
-@media (min-width: 992px) and (max-width:1200px) {
-  h4 {
-    font-size: 35px;
-  }
-}
-
-/* XL ONLY */
-@media (min-width: 1200px) {
-  h4 {
-    font-size: 30px;
-  }
-
-}
-
-@media (min-width: 992px){
-  .container {
-    margin-left: 15%;
-  }
-}
-
-/* Medium Screens */
-
-@media (min-width: 768px) {
-
-/* TOP NAVBAR */
-
-  /* Navigation */
-  .fa-home:hover {
-    color: #34495e;
-  }
-
-  .navbar {
-    background-color: #f4f7f7;
-  }
-
-  .navbar-brand {
-    font-size: 32px;
-  }
-
-  .nav-link {
-    position: relative;
-    margin: 10px 20px;
-    color: #5da0a2;
-    font-size: 18px;
-  }
-
-  .nav-link:hover {
-    color: #5da0a2;
-  }
-
-
-/* LEFT-SIDE ICON BAR */
-
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
-.icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* Style the icon bar links */
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  width: 4rem;
-  transition: all 0.3s ease;
-  color: #34495e;
-  font-size: 25px;
-}
-
-/* Style the social media icons with color, if you want */
-.icon-bar a:hover {
-  color: #f4f7f7 !important;
-  background-color: #34495e !important;
-}
-
-.card {
-  background-color: #f4f7f7;
-  margin: 20px 5px;
-  padding: auto auto;
-}
-
-.container {
-  max-width: 90vw;
-}
-
-
-.main {
-  padding-left: 4rem;
-  overflow: hidden;
-}
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .container {
-    width: 70%;
-  }
-
-  #title {
-    margin-top: 5%;
-    width: 60%;
-  }
-
-  #title h1 {
-    font-size: 4rem;
-  }
-  #title h2 {
-    font-size: 3rem;
-  }
-  #title h3 {
-    font-size: 2rem;
-  }
-  #title h4 {
-    font-size: 1.7rem;
-  }
-  #title p {
-    font-size: 1.5rem;
-  }
-  #title .btn {
-    font-size: 1.5rem;
-  }
-
-  #skills {
-    width: 70%;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1.8rem;
-  }
-
-  h5 {
-    font-size: 1.3rem;
-  }
-
-  p {
-    font-size: 1.3rem;
-  }
-
-  #more {
-    font-size: 1.3rem;
-  }
-
-  .btn {
-    font-size: 1.5rem;
-    width: 50%;
-  }
-}
-
-.label {
-  font-size: 1.5rem;
-  letter-spacing: 5px;
-  color: #5da0a2;
-  text-transform: uppercase;
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 60%;
-  }
-
-  #title {
-    margin-top: 5%;
-    width: 80%;
-  }
-}
+/* Contact (lg / xl) */
