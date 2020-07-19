@@ -1,4 +1,4 @@
-jQuery Smooth scroll
+// jQuery Smooth scroll
 
 $('a').on('click', function(e) {
  if (this.hash !== ''); {
